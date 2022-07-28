@@ -11,6 +11,9 @@
 		DE4A716228927B6F0021D069 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A716128927B6F0021D069 /* ContentView.swift */; };
 		DE4A716428927B720021D069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4A716328927B720021D069 /* Assets.xcassets */; };
 		DE4A716728927B720021D069 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4A716628927B720021D069 /* Preview Assets.xcassets */; };
+		DE4A717128927B920021D069 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A717028927B910021D069 /* Home.swift */; };
+		DE4A717328927B9D0021D069 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A717228927B9D0021D069 /* HomeViewModel.swift */; };
+		DE4A7175289284AF0021D069 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A7174289284AF0021D069 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		DE4A716128927B6F0021D069 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE4A716328927B720021D069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4A716628927B720021D069 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE4A717028927B910021D069 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		DE4A717228927B9D0021D069 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DE4A7174289284AF0021D069 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 		DE4A715E28927B6F0021D069 /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				DE4A716F28927B860021D069 /* ViewModel */,
+				DE4A716E28927B810021D069 /* Model */,
+				DE4A716D28927B7F0021D069 /* View */,
 				DE4A715F28927B6F0021D069 /* FoodAppApp.swift */,
-				DE4A716128927B6F0021D069 /* ContentView.swift */,
 				DE4A716328927B720021D069 /* Assets.xcassets */,
 				DE4A716528927B720021D069 /* Preview Content */,
 			);
@@ -65,6 +73,31 @@
 				DE4A716628927B720021D069 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE4A716D28927B7F0021D069 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A716128927B6F0021D069 /* ContentView.swift */,
+				DE4A717028927B910021D069 /* Home.swift */,
+				DE4A7174289284AF0021D069 /* Menu.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE4A716E28927B810021D069 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE4A716F28927B860021D069 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A717228927B9D0021D069 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4A716228927B6F0021D069 /* ContentView.swift in Sources */,
+				DE4A717128927B920021D069 /* Home.swift in Sources */,
 				DE4A716028927B6F0021D069 /* FoodAppApp.swift in Sources */,
+				DE4A717328927B9D0021D069 /* HomeViewModel.swift in Sources */,
+				DE4A7175289284AF0021D069 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +306,7 @@
 				DEVELOPMENT_TEAM = 7CRNJ953YN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow to read location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +336,7 @@
 				DEVELOPMENT_TEAM = 7CRNJ953YN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow to read location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
